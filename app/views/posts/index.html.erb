@@ -1,0 +1,12 @@
+<h1>Posts#index</h1>
+
+<% @posts.each do |post| %>
+  <%= post.created_at %><br>
+  <%= post.icon %><br>
+  <h2><%= post.title %><br></h2>
+  <%= post.entry %><br>
+  <%= link_to "Edit post", edit_post_path(post.id)%>
+  <hr>
+<% end %>
+
+<%= link_to "New Blog Post", new_post_path %>

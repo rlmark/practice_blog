@@ -1,0 +1,29 @@
+<h1>Posts#new</h1>
+
+<%= form_for :post, url: create_post_path do |f| %>
+
+  <p>
+    <%= f.label :published %>
+    <%= f.text_field :published %>
+  </p>
+
+  <p>
+    <%= f.label :icon %><br>
+    <%= f.text_field :icon %>
+  </p>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :entry %><br>
+    <%= f.text_area :entry %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
